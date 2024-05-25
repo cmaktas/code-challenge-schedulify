@@ -1,0 +1,66 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+target/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# Java build output directory
+bin/
+
+# Maven specific files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Spring Boot specific files
+spring-boot-app/src/main/resources/config/application.yml
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*~
+
+# IntelliJ IDEA project configuration files
+.idea/
+*.iml
+*.ipr
+
+# Exceptions for necessary project files
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/workspace.xml
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
