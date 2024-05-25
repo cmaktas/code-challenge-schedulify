@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com. schedulify.conference-scheduler' is invalid and this project uses 'com.schedulify.conference_scheduler' instead.
+* The original package name 'com. schedulify.conference-scheduler' is invalid and this project uses 'com.schedulify.conferencescheduler' instead.
 
 # Getting Started
 

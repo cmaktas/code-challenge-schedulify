@@ -1,4 +1,4 @@
-package com.schedulify.conference_scheduler;
+package com.schedulify.conferencescheduler;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

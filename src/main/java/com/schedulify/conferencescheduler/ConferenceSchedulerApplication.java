@@ -1,4 +1,4 @@
-package com.schedulify.conference_scheduler;
+package com.schedulify.conferencescheduler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
