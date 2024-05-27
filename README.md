@@ -58,4 +58,4 @@ mvn spring-boot:run
 You can find the Postman collection for API testing in the docs/postman directory.
 
 ### Contact
-Cem Aktas - cemaktas@ymail.com_
+Cem Aktas - cemaktas@ymail.com
