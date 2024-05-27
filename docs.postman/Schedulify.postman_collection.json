@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "0c59ed86-5074-42b4-8cf5-fa58f69ee75b",
+		"name": "Schedulify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22944736"
+	},
+	"item": [
+		{
+			"name": "Schedule Presentations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localURL}}/api/v1/schedule",
+					"host": [
+						"{{localURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"schedule"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localURL}}/api/v1/schedule",
+							"host": [
+								"{{localURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schedule"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2024 08:50:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Successfully scheduled events under 5 tracks.\",\n    \"timestamp\": \"2024-05-27T11:50:53.143232\",\n    \"data\": [\n        {\n            \"trackNo\": 1,\n            \"track\": [\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Firebase Event Management\",\n                        \"durationInMinutes\": 120,\n                        \"startsAt\": \"09:00AM\",\n                        \"endsAt\": \"11:00AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Microservices 'Just Right'\",\n                        \"durationInMinutes\": 60,\n                        \"startsAt\": \"11:00AM\",\n                        \"endsAt\": \"12:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"LUNCH\",\n                        \"subject\": \"Lunch\",\n                        \"durationInMinutes\": 60,\n                        \"startsAt\": \"12:00PM\",\n                        \"endsAt\": \"01:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"A Total Afternoon Event\",\n                        \"durationInMinutes\": 240,\n                        \"startsAt\": \"01:00PM\",\n                        \"endsAt\": \"05:00PM\"\n                    }\n                }\n            ]\n        },\n        {\n            \"trackNo\": 2,\n            \"track\": [\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Rails Magic\",\n                        \"durationInMinutes\": 91,\n                        \"startsAt\": \"09:00AM\",\n                        \"endsAt\": \"10:31AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Cypress Test Automation\",\n                        \"durationInMinutes\": 86,\n                        \"startsAt\": \"10:31AM\",\n                        \"endsAt\": \"11:57AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"FCM\",\n                        \"durationInMinutes\": 3,\n                        \"startsAt\": \"11:57AM\",\n                        \"endsAt\": \"12:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"LUNCH\",\n                        \"subject\": \"Lunch\",\n                        \"durationInMinutes\": 60,\n                        \"startsAt\": \"12:00PM\",\n                        \"endsAt\": \"01:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Monitoring Reactive Applications\",\n                        \"durationInMinutes\": 80,\n                        \"startsAt\": \"01:00PM\",\n                        \"endsAt\": \"02:20PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Architecting Your Codebase\",\n                        \"durationInMinutes\": 75,\n                        \"startsAt\": \"02:20PM\",\n                        \"endsAt\": \"03:35PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Async Testing on JVM\",\n                        \"durationInMinutes\": 65,\n                        \"startsAt\": \"03:35PM\",\n                        \"endsAt\": \"04:40PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"AWS Technical Essentials\",\n                        \"durationInMinutes\": 20,\n                        \"startsAt\": \"04:40PM\",\n                        \"endsAt\": \"05:00PM\"\n                    }\n                }\n            ]\n        },\n        {\n            \"trackNo\": 3,\n            \"track\": [\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Communicating Over Distance\",\n                        \"durationInMinutes\": 55,\n                        \"startsAt\": \"09:00AM\",\n                        \"endsAt\": \"09:55AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Overdoing it in Python\",\n                        \"durationInMinutes\": 52,\n                        \"startsAt\": \"09:55AM\",\n                        \"endsAt\": \"10:47AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n                        \"durationInMinutes\": 45,\n                        \"startsAt\": \"10:47AM\",\n                        \"endsAt\": \"11:32AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Architecting in AWS\",\n                        \"durationInMinutes\": 28,\n                        \"startsAt\": \"11:32AM\",\n                        \"endsAt\": \"12:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"LUNCH\",\n                        \"subject\": \"Lunch\",\n                        \"durationInMinutes\": 60,\n                        \"startsAt\": \"12:00PM\",\n                        \"endsAt\": \"01:00PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Pair Programming vs Noise\",\n                        \"durationInMinutes\": 45,\n                        \"startsAt\": \"01:00PM\",\n                        \"endsAt\": \"01:45PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Clojure Ate Scala (on my project)\",\n                        \"durationInMinutes\": 45,\n                        \"startsAt\": \"01:45PM\",\n                        \"endsAt\": \"02:30PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"AWS S3\",\n                        \"durationInMinutes\": 40,\n                        \"startsAt\": \"02:30PM\",\n                        \"endsAt\": \"03:10PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"AWS Lambdas\",\n                        \"durationInMinutes\": 39,\n                        \"startsAt\": \"03:10PM\",\n                        \"endsAt\": \"03:49PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"User Interface CSS in Apps\",\n                        \"durationInMinutes\": 35,\n                        \"startsAt\": \"03:49PM\",\n                        \"endsAt\": \"04:24PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n                        \"durationInMinutes\": 34,\n                        \"startsAt\": \"04:24PM\",\n                        \"endsAt\": \"04:58PM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"NETWORKING\",\n                        \"subject\": \"Networking Event\",\n                        \"durationInMinutes\": 2,\n                        \"startsAt\": \"04:58PM\",\n                        \"endsAt\": \"05:00PM\"\n                    }\n                }\n            ]\n        },\n        {\n            \"trackNo\": 4,\n            \"track\": [\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Perfect Scalability\",\n                        \"durationInMinutes\": 33,\n                        \"startsAt\": \"09:00AM\",\n                        \"endsAt\": \"09:33AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"A World Without HackerNews\",\n                        \"durationInMinutes\": 25,\n                        \"startsAt\": \"09:33AM\",\n                        \"endsAt\": \"09:58AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Apache Spark\",\n                        \"durationInMinutes\": 20,\n                        \"startsAt\": \"09:58AM\",\n                        \"endsAt\": \"10:18AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Flavors of Concurrency in Java\",\n                        \"durationInMinutes\": 16,\n                        \"startsAt\": \"10:18AM\",\n                        \"endsAt\": \"10:34AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Continuous Delivery\",\n                        \"durationInMinutes\": 15,\n                        \"startsAt\": \"10:34AM\",\n                        \"endsAt\": \"10:49AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Sync Testing on JVM\",\n                        \"durationInMinutes\": 15,\n                        \"startsAt\": \"10:49AM\",\n                        \"endsAt\": \"11:04AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Ruby out of rails\",\n                        \"durationInMinutes\": 11,\n                        \"startsAt\": \"11:04AM\",\n                        \"endsAt\": \"11:15AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"A World With HackerNews\",\n                        \"durationInMinutes\": 10,\n                        \"startsAt\": \"11:15AM\",\n                        \"endsAt\": \"11:25AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Cloud Native Java\",\n                        \"durationInMinutes\": 5,\n                        \"startsAt\": \"11:25AM\",\n                        \"endsAt\": \"11:30AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"AWS Cognito\",\n                        \"durationInMinutes\": 5,\n                        \"startsAt\": \"11:30AM\",\n                        \"endsAt\": \"11:35AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"PRESENTATION\",\n                        \"subject\": \"Load testing with k6\",\n                        \"durationInMinutes\": 5,\n                        \"startsAt\": \"11:35AM\",\n                        \"endsAt\": \"11:40AM\"\n                    }\n                },\n                {\n                    \"event\": {\n                        \"eventType\": \"LUNCH\",\n                        \"subject\": \"Lunch\",\n                        \"durationInMinutes\": 60,\n                        \"startsAt\": \"12:00PM\",\n                        \"endsAt\": \"01:00PM\"\n                    }\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Empty Subject Validation Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \" \",\n        \"duration\": \"09\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localURL}}/api/v1/schedule",
+							"host": [
+								"{{localURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schedule"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2024 09:14:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"The subject must contain at least two non-whitespace characters\",\n    \"timestamp\": \"2024-05-27T12:14:46.198512\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "Duplicate Subject Validation Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localURL}}/api/v1/schedule",
+							"host": [
+								"{{localURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schedule"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2024 09:17:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Duplicate presentation subject: Architecting Your Codebase\",\n    \"timestamp\": \"2024-05-27T12:17:32.978703\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "Duration Validation Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \"AI\",\n        \"duration\": \"-9\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localURL}}/api/v1/schedule",
+							"host": [
+								"{{localURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schedule"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2024 09:18:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Duration must be a positive integer or 'lightning', 'LIGHTNING', or 'Lightning'\",\n    \"timestamp\": \"2024-05-27T12:18:43.706511\",\n    \"data\": null\n}"
+				},
+				{
+					"name": "Extreme Duration Validation Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentations\": [\n      {\n        \"subject\": \"Architecting Your Codebase\",\n        \"duration\": \"75\"\n      },\n      {\n        \"subject\": \"Overdoing it in Python\",\n        \"duration\": \"52\"\n      },\n      {\n        \"subject\": \"Flavors of Concurrency in Java\",\n        \"duration\": \"16\"\n      },\n      {\n        \"subject\": \"Ruby Errors from Mismatched Gem Versions\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Architecting in AWS\",\n        \"duration\": \"28\"\n      },\n      {\n        \"subject\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\n        \"duration\": \"34\"\n      },\n      {\n        \"subject\": \"Cloud Native Java\",\n        \"duration\": \"lightning\"\n      },\n      {\n        \"subject\": \"Communicating Over Distance\",\n        \"duration\": \"55\"\n      },\n      {\n        \"subject\": \"AWS Technical Essentials\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Continuous Delivery\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"Monitoring Reactive Applications\",\n        \"duration\": \"80\"\n      },\n      {\n        \"subject\": \"Pair Programming vs Noise\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Rails Magic\",\n        \"duration\": \"91\"\n      },\n      {\n        \"subject\": \"Microservices 'Just Right'\",\n        \"duration\": \"60\"\n      },\n      {\n        \"subject\": \"Clojure Ate Scala (on my project)\",\n        \"duration\": \"45\"\n      },\n      {\n        \"subject\": \"Perfect Scalability\",\n        \"duration\": \"33\"\n      },\n      {\n        \"subject\": \"Apache Spark\",\n        \"duration\": \"20\"\n      },\n      {\n        \"subject\": \"Async Testing on JVM\",\n        \"duration\": \"65\"\n      },\n      {\n        \"subject\": \"Cypress Test Automation\",\n        \"duration\": \"86\"\n      },\n      {\n        \"subject\": \"Sync Testing on JVM\",\n        \"duration\": \"15\"\n      },\n      {\n        \"subject\": \"A World Without HackerNews\",\n        \"duration\": \"25\"\n      },\n      {\n        \"subject\": \"AWS Cognito\",\n        \"duration\": \"LIGHTNING\"\n      },\n      {\n        \"subject\": \"AWS S3\",\n        \"duration\": \"40\"\n      },\n      {\n        \"subject\": \"Load testing with k6\",\n        \"duration\": \"Lightning\"\n      },\n      {\n        \"subject\": \"A World With HackerNews\",\n        \"duration\": \"10\"\n      },\n      {\n        \"subject\": \"A Total Afternoon Event\",\n        \"duration\": \"240\"\n      },\n      {\n        \"subject\": \"AI\",\n        \"duration\": \"242\"\n      },\n      {\n        \"subject\": \"Firebase Event Management\",\n        \"duration\": \"120\"\n      },\n      {\n        \"subject\": \"FCM\",\n        \"duration\": \"3\"\n      },\n      {\n        \"subject\": \"Ruby out of rails\",\n        \"duration\": \"11\"\n      },\n      {\n        \"subject\": \"AWS Lambdas\",\n        \"duration\": \"39\"\n      },\n      {\n        \"subject\": \"User Interface CSS in Apps\",\n        \"duration\": \"35\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localURL}}/api/v1/schedule",
+							"host": [
+								"{{localURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"schedule"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 May 2024 09:19:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Error\",\n    \"message\": \"Duration must be between 1 and 240 minutes\",\n    \"timestamp\": \"2024-05-27T12:19:21.079045\",\n    \"data\": null\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "localURL",
+			"value": "http://localhost:8080"
+		}
+	]
+}
