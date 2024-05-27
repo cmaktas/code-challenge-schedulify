@@ -42,10 +42,17 @@ git clone https://github.com/cmaktas/schedulify.git
 ```sh
 cd schedulify
 ```
-### Run the application
+## Run the application
+### Using Maven
 ```sh
 mvn clean install
 mvn spring-boot:run
 ```
+
+### Using Docker
+```sh
+./run.sh
+```
+
 ### Contact
-Cem Aktas - cemaktas@ymail.com
+Cem Aktas - cemaktas@ymail.com_

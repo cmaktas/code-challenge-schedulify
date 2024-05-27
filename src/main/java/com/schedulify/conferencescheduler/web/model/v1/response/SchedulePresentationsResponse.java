@@ -17,6 +17,10 @@ public class SchedulePresentationsResponse extends BaseResponse<List<SchedulePre
     @SuperBuilder
     @AllArgsConstructor
     public static class Track {
+
+        @Schema(description = "Number of the track")
+        private int trackNo;
+
         @Schema(description = "List of events in the track")
         private List<EventWrapper> track;
     }

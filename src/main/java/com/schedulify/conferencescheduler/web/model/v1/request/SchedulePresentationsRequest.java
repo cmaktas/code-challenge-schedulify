@@ -24,9 +24,11 @@ public class SchedulePresentationsRequest {
     @AllArgsConstructor
     public static class Presentation {
         @NotBlank
+        @Pattern(regexp = ".*\\S.*\\S.*", message = "The subject must contain at least two non-whitespace characters")
         @Schema(description = "The subject of the presentation", example = "Architecting Your Codebase")
         private String subject;
 
+        @NotBlank(message = "Duration cannot be empty")
         @Pattern(regexp = "\\d+|lightning", message = "Duration must be a positive integer or 'lightning'")
         @Schema(description = "The duration of the presentation in minutes or 'lightning' for 5-minute presentations", example = "60")
         private String duration;

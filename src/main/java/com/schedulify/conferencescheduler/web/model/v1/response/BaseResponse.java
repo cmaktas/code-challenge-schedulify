@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class BaseResponse<T> {
 
-    @Schema(description = "Status of the response", example = "success")
+    @Schema(description = "Status of the response", example = "Success")
     private String status;
 
     @Schema(description = "Message detailing the response", example = "Request processed successfully")
