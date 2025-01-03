@@ -1,7 +1,4 @@
 # Schedulify
-
-Organizing conference schedules efficiently.
-
 ## Overview
 
 Schedulify is an API designed to schedule presentations for a conference, creating different tracks for the presentations. The API receives a list of presentations with their subjects and durations, and organizes them into tracks based on specific rules.
